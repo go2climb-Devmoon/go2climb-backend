@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'MAVEN_3_8_6' // Nombre de la instalación de Maven en Jenkins
+        maven 'MAVEN_3_8_6'
     }
     stages {
         stage('Compile Stage') {
