@@ -1,1 +1,1 @@
-# go2climb-backend
+# Go2ClimbAPI-Backend
