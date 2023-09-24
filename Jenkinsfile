@@ -6,12 +6,16 @@ pipeline {
     stages {
         stage('Compile Stage') {
             steps {
-                bat 'mvn clean compile'
+                withMaven(maven : 'MAVEN_3_8_6') {
+                    bat 'mvn clean compile'
+                }
             }
         }
         stage('Testing Stage') {
             steps {
-                bat 'mvn test'
+                withMaven(maven : 'MAVEN_3_8_6') {
+                    bat 'mvn test'
+                }
             }
         }
     }
